@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+   	<EditText
+	    android:id="@+id/etxtFirstName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="20dp"
+	    android:ems="10"
+	    android:hint="First Name"
+	    android:inputType="textPersonName" />
+   	<EditText
+	    android:id="@+id/etxtLastName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/etxtFirstName"
+	    android:layout_alignLeft="@+id/etxtFirstName"
+	    android:layout_alignRight="@+id/etxtFirstName"
+	    android:ems="10"
+	    android:hint="Last Name"
+	    android:inputType="textPersonName" />
+   	<EditText
+	    android:id="@+id/etxtEmail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/etxtLastName"
+	    android:layout_alignLeft="@+id/etxtLastName"
+	    android:layout_alignRight="@+id/etxtLastName"
+	    android:ems="10"
+	    android:hint="Email"
+	    android:inputType="textWebEmailAddress|textEmailAddress|textEmailSubject" />
+   	<EditText
+	    android:id="@+id/etxtPassword_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/etxtEmail"
+	    android:layout_alignLeft="@+id/etxtEmail"
+	    android:layout_alignRight="@+id/etxtEmail"
+	    android:ems="10"
+	    android:hint="Password"
+	    android:inputType="textPassword|numberPassword|textWebPassword" />
+   	<CheckBox
+   	    android:id="@+id/checkAcept"
+   	    android:text="I agree." 
+   	    android:layout_below="@+id/etxtPassword_1"
+   	    android:layout_alignLeft="@+id/etxtPassword_1"
+   	    android:layout_alignRight="@+id/etxtPassword_1"
+   	    android:layout_height="wrap_content"
+   	    android:layout_width="wrap_content"
+   	    
+   	    />
+   	<Button
+   	    android:id="@+id/btnSignup"
+   	    android:text="Sign up"
+   	    android:layout_below="@+id/checkAcept"
+   	    android:layout_alignLeft="@+id/checkAcept"
+   	    android:layout_alignRight="@+id/checkAcept"
+   	    android:layout_height="wrap_content"
+   	    android:layout_width="wrap_content" 
+   	    />
+
+</RelativeLayout>
